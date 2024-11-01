@@ -1,38 +1,27 @@
+/* Make the app take up full viewport height and center its contents */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;    /* Stack h1 and the form vertically */
+  justify-content: center;   /* Center vertically */
+  align-items: center;       /* Center horizontally */
+  height: 100vh;             /* Full viewport height */
+  margin: 0 auto;            /* Center the app horizontally */
+  padding: 20px;
+  box-sizing: border-box;    /* Ensure padding is included in total width/height */
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the heading */
+h1 {
+  font-size: 2rem;           /* Adjust font size as needed */
+  margin-bottom: 30px;       /* Space between heading and form */
+  text-align: center;        /* Center text in the heading */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;    /* Stack form elements vertically */
+  width: 100%;               /* Full width within container */
 }
+
+/* Style the form labels

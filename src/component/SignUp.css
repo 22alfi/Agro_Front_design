@@ -1,0 +1,165 @@
+.signup-container {
+  position: relative; /* Relative positioning allows more control over placement */
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.form-container {
+  position: absolute;
+  left: 100px; /* Moves the form 20px from the left */
+  top: 48%; /* Vertically center the form */
+  transform: translateY(-50%); /* Adjust to vertically center */
+  background-color: rgba(255, 255, 255, 0.339); /* Keep the semi-transparent background */
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.196);
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+h1 {
+  font-size: 2rem;
+  margin-top: -600px;
+  margin-right: -130px;
+  text-align: center;
+}
+
+
+
+.form-container p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.input-group {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px; /* Space between the groups */
+}
+
+.input-item {
+  flex: 1; /* Allow the input items to grow */
+  margin-right: 10px; /* Space between email and phone input */
+}
+
+.input-item input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+
+.input-item:last-child {
+  margin-right: 0; /* Remove right margin from the last item */
+}
+
+.or-text {
+  margin: 0 10px; /* Space between the inputs */
+  font-size: 12px; /* Smaller font size for OR */
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+  width: 80%; /* Ensure inputs take full width of container */
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.login-btn,
+.google-login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex; /* This allows the content to align */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.login-btn {
+  background-color: #006400; /* Dark green for login */
+  color: white;
+}
+
+.google-login {
+  background-color: #4285f4; /* Google button color */
+  color: white;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.google-logo {
+  margin-right: 8px; /* Add space between the logo and text */
+  height: 20px; /* Adjust this to change logo size */
+  width: auto; /* Keep the aspect ratio */
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #006400;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-button:hover {
+  text-decoration: none;
+}
+
+.right-image {
+  width: 50%; /* Ensure the image is responsive */
+  height: 98%; 
+  position: absolute;
+  padding: 40px;
+  border-radius: 50px;
+  right: -5px; /* Moves the form 20px from the left */
+  top: 100%;/* Maintain aspect ratio */
+  
+}
+
+.image-container {
+  flex: 1; /* Allow the image container to take the remaining space */
+}
+.right-image {
+  width: 45%; /* Ensure the image is responsive */
+  height: 98%;
+  position: absolute;
+  padding: 40px;
+  border-radius: 50px;
+  right: -5px;
+  top: -5%; /* Adjust this value to move the image down */
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+

@@ -1,0 +1,144 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #e94560;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #878787;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0b2a0e;
+    transform: scale(1.05); /* Grows slightly on hover */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 300px;
+    height: 30px;
+    padding: 0.2rem 0.5rem;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ccc; /* Adds a grey border */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 200px;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+}
+
+.search-bar input::placeholder {
+    color: #666;
+}
+
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 2rem;
+}
+.auth-buttons .login-btn {
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* White background */
+    padding: 1rem;
+    font-size: 0.9rem;
+    border: 1px solid #868484; /* Grey border */
+    border-radius: 60px; /* Rounded corners */
+    cursor: pointer;
+    color: #868484; /* Grey font color */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 120px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.auth-buttons .signup-btn {
+    background: linear-gradient(135deg, #fefefe, #0b500e);
+    padding: 0.5rem; /* Adjust padding to maintain consistency */
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 60px; /* Rounded right corners */
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 120px; /* Adjust the width as needed for Sign Up */
+    height: 35px;
+    margin-top: 5px; /* Move Sign Up down by 5px */
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #2a2a3c, #4a4a5a);
+}
+
+.signup-btn {
+    background: linear-gradient(135deg, #b1b107, #c44b00);
+}
+
+.auth-buttons .login-btn:hover {
+    transform: scale(1.05); /* Slightly grows on hover */
+    background-color: #174021; /* Green hover effect */
+    color: hsl(134, 72%, 8%); /* White font on hover */
+}
+
+.auth-buttons .signup-btn:hover {
+    transform: scale(1.05); /* Grows slightly on hover */
+    background-color: #00c41a;
+}
+/* Home.css */
+
+.background {
+    background-image: url('./BACKGROUND.png'); /* Adjust the path based on the image's location */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    height: calc(100vh - -80px); /* Adjust height to accommodate the navbar height */
+    position: absolute; /* Positioning to place it behind the navbar */
+    top: 50px; /* Adjust this value to move the background down */
+    left: 0; /* Aligns it to the left */
+    right: 0; /* Aligns it to the right */
+    z-index: -1; /* Places it behind other elements */
+}
+
+
+.navbar {
+    position: relative; /* Set a positioning context for the navbar */
+    z-index: 1; /* Ensures the navbar is above the background image */
+}
