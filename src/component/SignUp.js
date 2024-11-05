@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SignUp.css';
-import googleLogo from './google_logo-removebg-preview.png';
-import rightImage from './right.jpg'; // Import the right-side image
+import googleLogo from './image/google_logo-removebg-preview.png';
+import rightImage from './image/right.jpg'; // Import the right-side image
 
 const SignUp = () => {
   const [fullName, setFullName] = useState('');

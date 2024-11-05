@@ -1,7 +1,7 @@
 // src/Home.js
 import React from 'react';
 import './Home.css';
-import logo from './logo.png'; // Adjust the path based on the logo's location
+import logo from './image/logo.png'; // Adjust the path based on the logo's location
 
 const Navbar = ({ setCurrentPage }) => {
     return (

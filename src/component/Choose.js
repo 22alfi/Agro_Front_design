@@ -1,9 +1,9 @@
 // src/component/Choose.js
 import React, { useState } from 'react';
 import './Choose.css';
-import farmerImage from './farmer.png'; // Correct path
-import customerImage from './cust-removebg-preview.png'; // Import the image for the second box
-import workerImage from './work-removebg-preview.png'; // Correct path for worker image
+import farmerImage from './image/farmer.png'; // Correct path
+import customerImage from './image/cust-removebg-preview.png'; // Import the image for the second box
+import workerImage from './image/work-removebg-preview.png'; // Correct path for worker image
 
 const Choose = ({ setCurrentPage }) => { // Accept setCurrentPage as a prop
   const [selectedIndex, setSelectedIndex] = useState(null); // Track the selected index

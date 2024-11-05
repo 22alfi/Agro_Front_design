@@ -1,6 +1,6 @@
 import React from "react";
 import "./Service.css"; // CSS file for styling
-import sampleImage from "./card.png"; // Replace with your main image path
+import sampleImage from "./image/card.png"; // Replace with your main image path
 
 const Service = () => {
   return (

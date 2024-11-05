@@ -44,21 +44,21 @@
 /* Background image for Box 1 */
 .box-1 {
     background-color: rgb(255, 255, 255);
-    background-image: url('./cast.png'); /* Replace with your image path */
+    background-image: url('./image/cast.png'); /* Replace with your image path */
     background-size: cover; /* Cover the entire box */
     background-position: center; /* Center the image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .box-2 {
-    background-image: url('./news.png'); /* Replace with your image path */
+    background-image: url('./image/news.png'); /* Replace with your image path */
     background-size: cover; /* Cover the entire box */
     background-position: center; /* Center the image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .box-3{
-    background-image: url('./expense.jpeg'); /* Replace with your image path */
+    background-image: url('./image/expense.jpeg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire box */
     background-position: center; /* Center the image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
@@ -66,7 +66,7 @@
 }
 
 .box-4{
-    background-image: url('./shop.png'); /* Replace with your image path */
+    background-image: url('./image/shop.png'); /* Replace with your image path */
     background-size: cover; /* Cover the entire box */
     background-position: center; /* Center the image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
