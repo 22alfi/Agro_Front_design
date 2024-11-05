@@ -9,6 +9,9 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 40px;
     font-family: 'Roboto', sans-serif;
+    position: sticky; /* Keep navbar on top */
+    top: 0; /* Stick to the top */
+    z-index: 1; /* Ensure navbar is above other content */
 }
 
 .navbar-logo {
@@ -71,12 +74,12 @@
     color: #666;
 }
 
-
 /* Auth Buttons */
 .auth-buttons {
     display: flex;
     gap: 2rem;
 }
+
 .auth-buttons .login-btn {
     background: linear-gradient(135deg, #ffffff, #ffffff); /* White background */
     padding: 1rem;
@@ -123,22 +126,29 @@
     transform: scale(1.05); /* Grows slightly on hover */
     background-color: #00c41a;
 }
-/* Home.css */
 
+/* Home.css */
 .background {
     background-image: url('./BACKGROUND.png'); /* Adjust the path based on the image's location */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
-    height: calc(100vh - -80px); /* Adjust height to accommodate the navbar height */
-    position: absolute; /* Positioning to place it behind the navbar */
-    top: 50px; /* Adjust this value to move the background down */
+    height: calc(100vh - 40px); /* Adjust height to accommodate the navbar height */
+    position: relative; /* Positioning to place it behind the content */
+    top: 40px; /* Adjust this value to move the background down */
     left: 0; /* Aligns it to the left */
     right: 0; /* Aligns it to the right */
     z-index: -1; /* Places it behind other elements */
 }
 
+/* General Body Styling */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Ensure the body takes full height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
 
-.navbar {
-    position: relative; /* Set a positioning context for the navbar */
-    z-index: 1; /* Ensures the navbar is above the background image */
+.App {
+    min-height: 100vh; /* Ensure the App component takes at least the full height */
+    position: relative; /* Allow positioning of elements */
 }

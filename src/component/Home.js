@@ -14,7 +14,7 @@ const Navbar = ({ setCurrentPage }) => {
             </div>
             <ul className="nav-links">
                 <li onClick={() => setCurrentPage('Home')}><a href="#">Home</a></li>
-                <li onClick={() => setCurrentPage('Choose')}><a href="#">Services</a></li>
+                <li onClick={() => setCurrentPage('Service')}><a href="#">Services</a></li> {/* Updated to redirect to Service */}
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
@@ -26,11 +26,11 @@ const Navbar = ({ setCurrentPage }) => {
     );
 };
 
-const Home = ({ setCurrentPage }) => {
+const Home = ({ setCurrentPage, currentPage }) => {
     return (
         <div>
             <Navbar setCurrentPage={setCurrentPage} />
-            <div className="background"></div> {/* Background image div */}
+            {currentPage === "Home" && <div className="background"></div>} {/* Background image div */}
         </div>
     );
 };

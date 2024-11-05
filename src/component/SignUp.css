@@ -1,3 +1,4 @@
+/* Main container */
 .signup-container {
   position: relative; /* Relative positioning allows more control over placement */
   height: 100vh; /* Full viewport height */
@@ -5,14 +6,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: white;
+  overflow: visible; /* Allow contents to extend beyond container */
 }
 
+/* Form container styling */
 .form-container {
   position: absolute;
-  left: 100px; /* Moves the form 20px from the left */
+  left: 100px; /* Moves the form from the left */
   top: 48%; /* Vertically center the form */
   transform: translateY(-50%); /* Adjust to vertically center */
-  background-color: rgba(255, 255, 255, 0.339); /* Keep the semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.339); /* Semi-transparent background */
   padding: 40px;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.196);
@@ -21,69 +24,30 @@
   overflow: hidden;
 }
 
-
-h1 {
-  font-size: 2rem;
-  margin-top: -600px;
-  margin-right: -130px;
-  text-align: center;
-}
-
-
-
+/* Paragraph inside form container */
 .form-container p {
   margin-bottom: 20px;
   font-size: 18px;
 }
 
-.input-group {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space items evenly */
-  align-items: center; /* Align items vertically */
-  margin-bottom: 20px; /* Space between the groups */
-}
-
+/* Individual input items */
 .input-item {
-  flex: 1; /* Allow the input items to grow */
-  margin-right: 10px; /* Space between email and phone input */
+  margin-bottom: 20px; /* Space between each input item */
 }
 
-.input-item input[type="text"] {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid white;
-  border-radius: 4px;
-}
-
-
-.input-item:last-child {
-  margin-right: 0; /* Remove right margin from the last item */
-}
-
-.or-text {
-  margin: 0 10px; /* Space between the inputs */
-  font-size: 12px; /* Smaller font size for OR */
-}
-
-input[type="email"],
-input[type="tel"],
-input[type="text"] {
-  width: 80%; /* Ensure inputs take full width of container */
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid white;
-  border-radius: 4px;
-}
-
+/* Styling for text inputs */
+.input-item input[type="text"],
+.input-item input[type="email"],
+.input-item input[type="tel"],
 input[type="password"] {
-  width: 100%;
+  width: 100%; /* Full width for inputs */
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid white;
   border-radius: 4px;
 }
 
+/* Login and Google login buttons */
 .login-btn,
 .google-login {
   width: 100%;
@@ -91,9 +55,9 @@ input[type="password"] {
   border: none;
   border-radius: 4px;
   margin-bottom: 10px;
-  display: flex; /* This allows the content to align */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-btn {
@@ -104,15 +68,16 @@ input[type="password"] {
 .google-login {
   background-color: #4285f4; /* Google button color */
   color: white;
-  cursor: pointer; /* Change cursor to pointer on hover */
+  cursor: pointer;
 }
 
 .google-logo {
-  margin-right: 8px; /* Add space between the logo and text */
-  height: 20px; /* Adjust this to change logo size */
-  width: auto; /* Keep the aspect ratio */
+  margin-right: 8px; /* Space between the logo and text */
+  height: 20px; /* Adjust logo size */
+  width: auto; /* Maintain aspect ratio */
 }
 
+/* Remember and forgot password links */
 .remember-forgot {
   display: flex;
   justify-content: space-between;
@@ -120,6 +85,7 @@ input[type="password"] {
   margin-bottom: 20px;
 }
 
+/* Styling for clickable link button */
 .link-button {
   background: none;
   border: none;
@@ -132,28 +98,15 @@ input[type="password"] {
   text-decoration: none;
 }
 
+/* Right image styling */
 .right-image {
-  width: 50%; /* Ensure the image is responsive */
-  height: 98%; 
   position: absolute;
-  padding: 40px;
-  border-radius: 50px;
-  right: -5px; /* Moves the form 20px from the left */
-  top: 100%;/* Maintain aspect ratio */
-  
-}
-
-.image-container {
-  flex: 1; /* Allow the image container to take the remaining space */
-}
-.right-image {
-  width: 45%; /* Ensure the image is responsive */
-  height: 98%;
-  position: absolute;
-  padding: 40px;
-  border-radius: 50px;
-  right: -5px;
-  top: -5%; /* Adjust this value to move the image down */
+  right: 50px;
+  top: 49%;
+  border-radius: 30px;
+  transform: translateY(-50%);
+  width: 700px; /* Adjust size as needed */
+  height: 700px;
 }
 
 /* Prevent horizontal overflow */
@@ -162,4 +115,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
